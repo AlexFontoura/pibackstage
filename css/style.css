@@ -7,7 +7,7 @@
 header{
 	display: flex;
 	width: 100%;
-	height: 30%;
+	/*height: 30%;*/
 	font-size: 30px;
 	border: 1px solid black;
 	flex-direction: row;
@@ -36,19 +36,28 @@ body{
 	border: 1px solid black;
 	padding: 2.5% 15%;
 	width: 100%;
+	height: 30%;
+	/*flex: 1;*/
 }
 .affirmative {
 	border: 1px solid black;
 	width: 35%;
-	padding: 4em 5% 0 2.5%;
+	padding: 5em 5% 0 2.5%;
 }
 .affirmative ol li:not(:first-child){
-	margin-top: 5%;
+	margin-top: 10%;
 }
 .options{
+
 	border: 5px solid black;
 	width: 65%;
 	/*height: 70%;*/
+}
+form{
+	display: flex;
+	/*flex-wrap: wrap;*/
+	/*justify-content: flex-start;*/
+	/*align-items: flex-start;*/
 }
 .column-s-disagree{
 	display: flex;
@@ -56,6 +65,42 @@ body{
 	width: 15%;
 	border: 1px solid black;
 	align-items: center;
+	align-self: flex-start;
+}
+.column-disagree{
+	padding-top: 1em;
+	display: flex;
+	flex-direction: column;
+	width: 15%;
+	border: 1px solid black;
+	align-items: center;
+	align-self: flex-start;
+}
+.column-neutral{
+	padding-top: 1em;
+	display: flex;
+	flex-direction: column;
+	width: 15%;
+	border: 1px solid black;
+	align-items: center;
+	align-self: flex-start;
+}
+.column-agree{
+	padding-top: 1em;
+	display: flex;
+	flex-direction: column;
+	width: 15%;
+	border: 1px solid black;
+	align-items: center;
+	align-self: flex-start;
+}
+.column-s-agree{
+	display: flex;
+	flex-direction: column;
+	width: 15%;
+	border: 1px solid black;
+	align-items: center;
+	align-self: flex-start;
 }
 form div input{
 	margin-top: 33.1%;
